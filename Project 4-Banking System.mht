@@ -1,0 +1,358 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: Project 4-Banking System
+Date: Thu, 6 May 2010 13:25:35 -0400
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://ww2.cs.fsu.edu/~porter/cop3014/summer2010/projects/Project%204.htm
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Project 4-Banking System</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<META content=3D"MSHTML 6.00.6000.17023" name=3DGENERATOR></HEAD>
+<BODY bgColor=3D#ffffff>
+<P align=3Dcenter><FONT face=3DVerdana size=3D5><STRONG>Project =
+4-Banking=20
+System</STRONG></FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Description: </STRONG>In this =
+project, you=20
+will combine the experience from previous projects to create your =
+largest=20
+program. You will also gain experience using pointers, vectors, reading =
+and=20
+writing files, and formatting output.</FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Details:</STRONG> Write a =
+program to=20
+simulate a simple banking system.</FONT></P>
+<P><FONT face=3DVerdana size=3D2>Your first task is to create a class =
+called=20
+<STRONG>Account</STRONG>. This class will store a person's account ID, =
+passcode,=20
+last name, first name, and balance. </FONT></P>
+<P><FONT face=3DVerdana size=3D2>For your second task, you will create a =
+class=20
+called <STRONG>BankingSystem</STRONG>. This class must have at least the =
+
+following functionality:</FONT></P>
+<UL>
+  <LI><FONT face=3DVerdana size=3D2>Add a new account.</FONT><FONT=20
+  face=3D"Times New Roman"><BR><BR></FONT>
+  <LI><FONT face=3DVerdana size=3D2>Delete an existing account.</FONT> =
+<BR><BR>
+  <LI><FONT face=3DVerdana size=3D2>Inquire on an existing account (or =
+all=20
+  accounts).</FONT> <BR><BR>
+  <LI><FONT face=3DVerdana size=3D2>Save accounts to a file.</FONT> =
+<BR><BR>
+  <LI><FONT face=3DVerdana size=3D2>Load accounts from a file.</FONT> =
+</LI></UL>
+<P><FONT face=3DVerdana size=3D2><STRONG>BankingSystem</STRONG> must =
+also use a=20
+private data member that is declared as follows:</FONT></P>
+<BLOCKQUOTE>
+  <P><FONT face=3DVerdana size=3D2><STRONG>std::vector&lt;Account&gt;=20
+  accounts_;</STRONG></FONT></P></BLOCKQUOTE>
+<P><FONT face=3DVerdana size=3D2>Your third task will be to develop a =
+driver=20
+program. The driver program will print some type of menu allowing the =
+user to=20
+choose the option they want. Instead of using a =
+<STRONG>BankingSystem</STRONG>=20
+object, you must use a pointer to a <STRONG>BankingSystem</STRONG> =
+object with=20
+the <STRONG>new</STRONG> operator. Your book describes this operator on =
+pages=20
+476-477. So, in your driver program, you would write the =
+following:</FONT></P>
+<BLOCKQUOTE>
+  <P><FONT face=3DVerdana size=3D2><STRONG>BankingSystem* =
+myBankingSystem =3D new=20
+  BankingSystem();</STRONG></FONT></P></BLOCKQUOTE>
+<P><FONT face=3DVerdana size=3D2>At the end of your program, you have to =
+free this=20
+memory explicity by writing the following:</FONT></P>
+<BLOCKQUOTE>
+  <P><FONT face=3DVerdana size=3D2><STRONG>delete=20
+  myBankingSystem;</STRONG></FONT></P></BLOCKQUOTE>
+<P><FONT face=3DVerdana size=3D2>Unlike previous projects, this one is =
+very=20
+open-ended. Besides my explicit requirements, you are free to make your =
+own=20
+design decisions. But, remember to use good programming practices. My =
+sample=20
+runs will give you a model you can follow for your driver =
+program.</FONT></P>
+<P><FONT face=3DVerdana size=3D2><STRONG>Programming Tips:</STRONG> This =
+project=20
+rolls everything together into one. So, it is important to know the =
+concepts=20
+from the previous three projects. It may be helpful to create one =
+function at a=20
+time in <STRONG>BankingSystem</STRONG> and test it before proceeding. =
+You can=20
+also earn extra credit on this project by adding the following=20
+features:</FONT></P>
+<UL>
+  <LI><FONT face=3DVerdana size=3D2>The ability to sort account =
+inquiries by any of=20
+  the columns (5 points).</FONT> <BR><BR>
+  <LI><FONT face=3DVerdana size=3D2>The ability to withdraw money from =
+an account (5=20
+  points).</FONT> <BR><BR>
+  <LI><FONT face=3DVerdana size=3D2>The ability to deposit money into an =
+account (5=20
+  points).</FONT> </LI></UL>
+<P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3DVerdana =
+size=3D2><STRONG>Sample=20
+Runs: </STRONG></FONT></P>
+<BLOCKQUOTE dir=3Dltr style=3D"MARGIN-RIGHT: 0px">
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>*** Welcome to the Banking System ***</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the accountID: 1<BR>Enter the passcode: 1<BR>Enter the =
+first=20
+  name: Matt<BR>Enter the last name: Porter<BR>Enter the starting =
+balance:=20
+  $2.45</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account added successfully.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the accountID: 2<BR>Enter the passcode: 2<BR>Enter the =
+first=20
+  name: Gremlin<BR>Enter the last name: Porter<BR>Enter the starting =
+balance:=20
+  $2.50</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account added successfully.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the accountID: 3<BR>Enter the passcode: 3<BR>Enter the =
+first=20
+  name: Christ<BR>Enter the last name: Jones<BR>Enter the starting =
+balance:=20
+  $45.00</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account added successfully.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 3</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the account ID (-1 for all): -1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account ID&nbsp;&nbsp; Passcode&nbsp;&nbsp; Last=20
+  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First=20
+  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Balance<BR>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<BR>&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;=20
+  Porter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Matt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  2.45<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;=20
+  Porter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Gremlin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;=20
+  2.50<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;=20
+  Jones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Christ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  45.00</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 4</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the filename: bankaccounts.txt</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>File bankaccounts.txt saved successfully.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 2</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the accountID: 1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account erased.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 2</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the accountID: 2</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account erased.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 2</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the accountID: 3</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account erased.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 3</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the account ID (-1 for all): -1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account ID&nbsp;&nbsp; Passcode&nbsp;&nbsp; Last=20
+  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First=20
+  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Balance<BR>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=20
+  </FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 5</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the filename: bankaccounts.txt</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>File bankaccounts.txt loaded successfully.</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 3</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter the account ID (-1 for all): -1</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Account ID&nbsp;&nbsp; Passcode&nbsp;&nbsp; Last=20
+  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First=20
+  Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Balance<BR>=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D<BR>&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;=20
+  Porter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Matt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;=20
+  2.45<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;=20
+  Porter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Gremlin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;=20
+  2.50<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;=20
+  Jones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=20
+  =
+Christ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;=20
+  45.00</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>(1) Add Account<BR>(2) Delete Account<BR>(3) Account =
+Inquiry<BR>(4)=20
+  Save Accounts to File<BR>(5) Load Accounts from File<BR>(6) =
+Exit</FONT></P>
+  <P dir=3Dltr style=3D"MARGIN-RIGHT: 0px"><FONT face=3D"Courier New" =
+color=3D#ff0000=20
+  size=3D2>Enter selection: 6</FONT></P></BLOCKQUOTE>
+<BLOCKQUOTE dir=3Dltr style=3D"MARGIN-RIGHT: 0px">
+  <P>&nbsp;</P></BLOCKQUOTE></BODY></HTML>
